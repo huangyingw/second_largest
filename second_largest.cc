@@ -37,22 +37,22 @@ void second_largest(int array[], int len)
 
 int main() 
 {
-  int a[] = {4, 2, 5};
+  int a[] = {4, 2, 5};//4
   second_largest(a,sizeof(a)/sizeof(int));
 
-  int b[]={1, 2, 3, 4};
+  int b[]={1, 2, 3, 4};//3
   second_largest(b,sizeof(b)/sizeof(int));
 
-  int c[]={4, 1, 2, 3};
+  int c[]={4, 1, 2, 3};//3
   second_largest(c,sizeof(c)/sizeof(int));
 
-  int d[]={1, 1, 2, 2};
+  int d[]={1, 1, 2, 2};//-1
   second_largest(d,sizeof(d)/sizeof(int));
 
-  int e[]={1, 1};
+  int e[]={1, 1};//-1
   second_largest(e,sizeof(e)/sizeof(int));
 
-  int f[]={1};
+  int f[]={1};//-1
   second_largest(f,sizeof(f)/sizeof(int));
 
   int g[]={};
