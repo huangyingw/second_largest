@@ -8,6 +8,11 @@ void second_largest(int array[], int len)
 {
   int max,sec_max;
   max=sec_max=-1000;
+  if (len <=1)
+  {
+    cout<<-1<<endl;
+    return;
+  }
   for (int i=0;i<len;i++)
   {
     if (array[i]>max)
@@ -20,7 +25,14 @@ void second_largest(int array[], int len)
       sec_max=array[i];
     }
   }
-  cout<<sec_max<<endl;
+  if (max != sec_max)
+  { 
+    cout<<sec_max<<endl;
+  }
+  else
+  {
+    cout<<-1<<endl;
+  }
 }
 
 int main() 
@@ -36,11 +48,20 @@ int main()
 
   int d[]={1, 1, 2, 2};
   second_largest(d,sizeof(d)/sizeof(int));
+
+  int e[]={1, 1};
+  second_largest(e,sizeof(e)/sizeof(int));
+
+  int f[]={1};
+  second_largest(f,sizeof(f)/sizeof(int));
+
+  int g[]={};
+  second_largest(g,sizeof(g)/sizeof(int));
   /*
      3
      1
-     {1, 1} -1
-     {1} -1
+     -1
+     -1
      {} -1
      */
   return 0;
