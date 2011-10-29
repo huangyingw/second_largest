@@ -20,7 +20,7 @@ void second_largest(int array[], int len)
       sec_max=max;
       max=array[i];
     }
-    else if( array[i] < max && array[i] > sec_max)
+    else if( array[i] <= max && array[i] > sec_max)
     {
       sec_max=array[i];
     }
