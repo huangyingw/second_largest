@@ -55,7 +55,7 @@ int main()
   int f[]={1};//-1
   second_largest(f,sizeof(f)/sizeof(int));
 
-  int g[]={};
+  int g[]={};//-1
   second_largest(g,sizeof(g)/sizeof(int));
   return 0;
 }
