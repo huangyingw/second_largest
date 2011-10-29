@@ -37,8 +37,13 @@ int main()
   int a[] = {4, 2, 5};
   second_largest(a,sizeof(a)/sizeof(int));
 
-  /*{1, 2, 3, 4} 3
-  {{4, 1, 2, 3}} 3
+  int b[]={1, 2, 3, 4};
+  second_largest(b,sizeof(b)/sizeof(int));
+
+  int c[]={4, 1, 2, 3};
+  second_largest(c,sizeof(c)/sizeof(int));
+  /*
+   3
   {1, 1, 2, 2} 1
   {1, 1} -1
   {1} -1
