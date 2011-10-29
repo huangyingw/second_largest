@@ -7,7 +7,7 @@ using namespace std;
 void second_largest(int array[], int len) 
 {
   int max,sec_max;
-  max=sec_max=-1000;
+  max=sec_max=-1;
   if (len <=1)
   {
     cout<<-1<<endl;
@@ -20,7 +20,7 @@ void second_largest(int array[], int len)
       sec_max=max;
       max=array[i];
     }
-    else if( array[i] <= max && array[i] > sec_max)
+    else if( array[i] < max && array[i] > sec_max)
     {
       sec_max=array[i];
     }
@@ -29,10 +29,7 @@ void second_largest(int array[], int len)
   { 
     cout<<sec_max<<endl;
   }
-  else
-  {
-    cout<<-1<<endl;
-  }
+
 }
 
 int main() 
@@ -46,7 +43,7 @@ int main()
   int c[]={4, 1, 2, 3};//3
   second_largest(c,sizeof(c)/sizeof(int));
 
-  int d[]={1, 1, 2, 2};//-1
+  int d[]={1, 1, 2, 2};//1
   second_largest(d,sizeof(d)/sizeof(int));
 
   int e[]={1, 1};//-1
