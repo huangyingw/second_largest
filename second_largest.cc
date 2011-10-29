@@ -23,15 +23,6 @@ void second_largest(int array[], int len)
   cout<<sec_max<<endl;
 }
 
-void print_array(int array[], int len)
-{
-  for (int i=0;i<len;i++)
-  {
-    cout<<array[i]<<",";
-  }
-  cout<<endl;
-}
-
 int main() 
 {
   int a[] = {4, 2, 5};
@@ -42,12 +33,15 @@ int main()
 
   int c[]={4, 1, 2, 3};
   second_largest(c,sizeof(c)/sizeof(int));
+
+  int d[]={1, 1, 2, 2};
+  second_largest(d,sizeof(d)/sizeof(int));
   /*
-   3
-  {1, 1, 2, 2} 1
-  {1, 1} -1
-  {1} -1
-  {} -1
-  */
+     3
+     1
+     {1, 1} -1
+     {1} -1
+     {} -1
+     */
   return 0;
 }
