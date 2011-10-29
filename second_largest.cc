@@ -54,5 +54,6 @@ int main()
 
   int g[]={};//-1
   second_largest(g,sizeof(g)/sizeof(int));
+
   return 0;
 }
