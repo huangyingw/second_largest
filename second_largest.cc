@@ -24,11 +24,7 @@ int f(int a[ ], int len)
       sec_max=a[i];
     }
   }
-  if (max != sec_max)
-  { 
-    return sec_max;
-  }
-
+  return sec_max;
 }
 
 int main() 
@@ -54,13 +50,13 @@ int main()
   int g[]={};//-1
   cout<<f(g,sizeof(g)/sizeof(int))<<endl;
   /*
-   4
-   3
-   3
-   1
-   -1
-   -1
-   -1
-   */
+     4
+     3
+     3
+     1
+     -1
+     -1
+     -1
+     */
   return 0;
 }
