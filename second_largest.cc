@@ -8,23 +8,22 @@ int f(int a[ ], int len)
 {
   int max,sec_max;
   max=sec_max=-1;
-  if (len <=1)
+  if (len > 1)
   {
-    return -1;
-  }
-  for (int i=0;i<len;i++)
-  {
-    if (a[i]>max)
+    for (int i=0;i<len;i++)
     {
-      sec_max=max;
-      max=a[i];
+      if (a[i]>max)
+      {
+        sec_max=max;
+        max=a[i];
+      }
+      else if( a[i] < max && a[i] > sec_max)
+      {
+        sec_max=a[i];
+      }
     }
-    else if( a[i] < max && a[i] > sec_max)
-    {
-      sec_max=a[i];
-    }
+    return sec_max;
   }
-  return sec_max;
 }
 
 int main() 
