@@ -1,3 +1,7 @@
+/**
+ * @author huangyingw
+ *
+ */
 public class second_largest {
 	public static int f(int[] a) {
 		int max, sec_max;
