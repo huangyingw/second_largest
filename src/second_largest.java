@@ -22,22 +22,22 @@ public class second_largest {
 		System.out.println(f(a));
 
 		int b[] = { 1, 2, 3, 4 };
-		System.out.println(f(a));
+		System.out.println(f(b));
 
 		int c[] = { 4, 1, 2, 3 };
-		System.out.println(f(a));
+		System.out.println(f(c));
 
 		int d[] = { 1, 1, 2, 2 };
-		System.out.println(f(a));
+		System.out.println(f(d));
 
 		int e[] = { 1, 1 };
-		System.out.println(f(a));
+		System.out.println(f(e));
 
 		int h[] = { 1 };
-		System.out.println(f(a));
+		System.out.println(f(h));
 
 		int g[] = {};
-		System.out.println(f(a));
+		System.out.println(f(g));
 		/*
 		 * 4 3 3 1 -1 -1 -1
 		 */
