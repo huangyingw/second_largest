@@ -1,12 +1,12 @@
 /**
  * @author huangyingw
- *
+ * 
  */
 public class second_largest {
 	public static int f(int[] a) {
 		int max, sec_max;
 		max = sec_max = -1;
-		int len=a.length;
+		int len = a.length;
 		if (len > 1) {
 			for (int i = 0; i < len; i++) {
 				if (a[i] > max) {
@@ -45,6 +45,6 @@ public class second_largest {
 		/*
 		 * 4 3 3 1 -1 -1 -1
 		 */
-//		return 0;
+		// return 0;
 	}
 }
