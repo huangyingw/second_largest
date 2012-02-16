@@ -16,7 +16,6 @@ public class second_largest {
 					sec_max = a[i];
 				}
 			}
-			return sec_max;
 		}
 		return sec_max;
 	}
