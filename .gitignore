@@ -1,1 +1,19 @@
+<<<<<<< HEAD
 bin/second_largest.class
+=======
+*.ncb
+*.bak
+BubbleSort/Debug/BubbleSort.obj
+BubbleSort/Debug/BubbleSort.pch
+BubbleSort/Debug/BuildLog.htm
+BubbleSort/Debug/mt.dep
+BubbleSort/Debug/stdafx.obj
+BubbleSort/Debug/vc90.idb
+BubbleSort/Debug/vc90.pdb
+Debug/BubbleSort.exe
+Debug/BubbleSort.ilk
+Debug/BubbleSort.pdb
+BubbleSort.exe
+array_copy.exe
+second_largest.exe
+>>>>>>> cea85c7fd3a41d6763ab22637d5656fcf1ab1d5c
